@@ -1,6 +1,6 @@
-FROM alpine:3.2
+FROM alpine:3.15
 
-MAINTAINER Souhaieb Tarhouni <tarhounisouhaieb@gmail.com>
+LABEL github=https://github.com/liuxuc63/nginx-sts-docker
 
 ENV NGINX_VERSION nginx-1.15.3
 ADD nginx.conf /nginx.conf
