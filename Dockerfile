@@ -2,7 +2,7 @@ FROM alpine:3.15
 
 LABEL github=https://github.com/liuxuc63/nginx-sts-docker
 
-ENV NGINX_VERSION nginx-1.15.3
+ENV NGINX_VERSION nginx-1.15.9
 ADD nginx.conf /nginx.conf
 RUN apk --update add openssl-dev pcre-dev zlib-dev build-base curl unzip && \
     mkdir -p /tmp/src && \
